@@ -1,3 +1,4 @@
+//Importando funções do typeorm
 import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreateUsers1624395736127 implements MigrationInterface {

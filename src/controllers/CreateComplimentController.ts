@@ -6,7 +6,6 @@ class CreateComplimentController {
   async handle(request: Request, response: Response) {
     const { tag_id, user_receiver, message } = request.body;
 
-    //passando o user_id da biblioteca para o user_sender
     const { user_id } = request;
 
     const createComplimentService = new CreateComplimentService();

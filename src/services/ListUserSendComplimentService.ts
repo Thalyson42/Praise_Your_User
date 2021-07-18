@@ -7,7 +7,6 @@ class ListUserSendComplimentService {
 
     const complimentRepositories = getCustomRepository(ComplimentsRepositories);
 
-    //Retornar todos os compliments enviados pelo usuário
     const compliments = await complimentRepositories.find({
       where: {
         user_sender: user_id,
